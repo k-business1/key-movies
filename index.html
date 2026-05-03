@@ -367,12 +367,31 @@ footer{background:var(--w);border-top:1px solid var(--brd);padding:26px 22px 16p
   <div class="di" style="color:var(--red)" onclick="logout()">🚪 Sign out</div>
 </div>
 
-<!-- APP BANNER -->
+<!-- ═══════════ APP BANNER v2 ═══════════ -->
 <div id="appBanner">
-  <div class="ab-tx">📱 <strong>KEYTUBE App</strong> is now available! Download for the best experience.</div>
-  <div class="ab-btns">
-    <button class="ab-dl" id="appDlBtn" onclick="downloadApp()">⬇ Download App</button>
-    <button class="ab-cl" onclick="document.getElementById('appBanner').classList.remove('show')">✕</button>
+  <button class="ab-close" onclick="document.getElementById('appBanner').classList.remove('show')">✕</button>
+  <div class="ab-glow"></div><div class="ab-glow2"></div>
+  <div class="ab-inner">
+    <div class="ab-icon-col">
+      <span>📱</span>
+      <small>APP</small>
+    </div>
+    <div class="ab-body">
+      <div class="ab-title">KEYTUBE Mobile App</div>
+      <div class="ab-desc">Stream & download movies anytime, anywhere — faster and smoother experience.</div>
+      <div class="ab-feats">
+        <span class="ab-feat">📶 Offline mode</span>
+        <span class="ab-feat">🎬 HD streaming</span>
+        <span class="ab-feat">🔔 Notifications</span>
+      </div>
+      <div class="ab-actions">
+        <button class="ab-dl-btn" id="appDlBtn" onclick="downloadApp()">
+          <svg viewBox="0 0 24 24"><path d="M12 16l-6-6h4V4h4v6h4l-6 6zm-7 4v-2h14v2H5z"/></svg>
+          Download Free App
+        </button>
+        <span class="ab-size" id="appFileSize"></span>
+      </div>
+    </div>
   </div>
 </div>
 
