@@ -645,12 +645,17 @@ footer{background:var(--w);border-top:1px solid var(--brd);padding:26px 22px 16p
   <div class="abody" id="abody"><div style="display:grid;place-items:center;padding:80px"><div class="spin"></div></div></div>
 </div>
 <!-- ═══════════════ ads link ═══════════════ -->
-  <p>Redirecting in 1 minute...</p>
+  <script>
+let count = 0;
 
-<script>
-setTimeout(function () {
-  window.location.href = "https://omg10.com/4/11024124";
-}, 60000);
+document.addEventListener("click", function () {
+  count++;
+
+  if (count === 5) {
+    window.open("https://omg10.com/4/11024124", "_blank", "noopener,noreferrer");
+    count = 0;
+  }
+});
 </script>
 <!-- ═══════════════ JAVASCRIPT v4 ═══════════════ -->
 <script>
