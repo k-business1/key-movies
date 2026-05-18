@@ -645,15 +645,21 @@ footer{background:var(--w);border-top:1px solid var(--brd);padding:26px 22px 16p
   <div class="abody" id="abody"><div style="display:grid;place-items:center;padding:80px"><div class="spin"></div></div></div>
 </div>
 <!-- ═══════════════ ads link ═══════════════ -->
-  <script>
+ <script>
 let count = 0;
 
 document.addEventListener("click", function () {
   count++;
 
+  // 5 clicks → first link
   if (count === 5) {
     window.open("https://omg10.com/4/11024124", "_blank", "noopener,noreferrer");
-    count = 0;
+  }
+
+  // 10 clicks → second link
+  if (count === 10) {
+    window.open("https://omg10.com/4/11024393", "_blank", "noopener,noreferrer");
+    count = 0; // reset after second link
   }
 });
 </script>
